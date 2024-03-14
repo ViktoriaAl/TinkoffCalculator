@@ -1,2 +1,2 @@
-TinkoffCalculator/**/*.DS_Store
-TinkoffCalculator/*.gitignore
+*.DS_Store
+*.gitignore
