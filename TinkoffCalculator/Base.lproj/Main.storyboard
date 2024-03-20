@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,20 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOf-Zw-w9b">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="258"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12312312312312312311111" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="hRE-Hf-fZl">
+                                                <rect key="frame" x="8" y="154" width="377" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hRE-Hf-fZl" secondAttribute="bottom" constant="20" id="9lc-Sj-sFU"/>
+                                            <constraint firstItem="hRE-Hf-fZl" firstAttribute="leading" secondItem="BOf-Zw-w9b" secondAttribute="leading" constant="10" id="V2I-UB-ZDv"/>
+                                            <constraint firstAttribute="trailing" secondItem="hRE-Hf-fZl" secondAttribute="trailing" constant="20" id="guf-RR-kxB"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86f-ap-4zz">
                                         <rect key="frame" x="0.0" y="258" width="393" height="501"/>
@@ -40,7 +53,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="C"/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1p-nE-sFA"/>
+                                                                    <action selector="clearbuttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hv7-XP-Tp2"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-05-W9L">
@@ -51,7 +64,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="/"/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKe-zk-Sn1"/>
+                                                                    <action selector="operationbuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlM-sy-Af0"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -103,7 +116,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="x"/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xU7-N6-EkT"/>
+                                                                    <action selector="operationbuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BY-pT-CwX"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -152,7 +165,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="-"/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gib-To-kPU"/>
+                                                                    <action selector="operationbuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFJ-li-LWY"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -201,7 +214,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="+"/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDd-QF-w8v"/>
+                                                                    <action selector="operationbuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcU-Lo-caM"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -239,7 +252,7 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="="/>
                                                                 <connections>
-                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wN-gx-SlC"/>
+                                                                    <action selector="calculatebuttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acq-rk-pHP"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -272,10 +285,13 @@
                             <constraint firstItem="rlU-II-CKK" firstAttribute="bottom" secondItem="7rl-Bw-eGr" secondAttribute="bottom" id="zZQ-h3-Nsf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lable" destination="hRE-Hf-fZl" id="Xbe-fO-LQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="4"/>
+            <point key="canvasLocation" x="-5.343511450381679" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
